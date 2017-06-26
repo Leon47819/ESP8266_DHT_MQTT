@@ -258,6 +258,7 @@ void findAndPost(){
 
 void loop() {
   findAndPost();
+  Serial.println("Deep sleep...");
   ESP.deepSleep(atoi(mqtt_interval)*1000000);
   Serial.println("error sleep");
 }
